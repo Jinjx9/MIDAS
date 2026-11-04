@@ -1,0 +1,64 @@
+[
+  {
+    "source": "analysis\\recovered_formal_runs_20261020\\50salads_fold2\\runtime_source\\official_eval.py",
+    "source_sha256": "736b56daf53394cf1e6f2f3c35e33879ee80157edd04ac603b2cd5d96a1c16ac",
+    "destination": "core\\asformer_metrics.py",
+    "destination_sha256": "c96f84f076225a03f81c1801b036e40c2fd74df283ffc219c8e894321bc7028b",
+    "extracted_names": [
+      "edit_score",
+      "f_score",
+      "get_labels_start_end_time",
+      "levenstein"
+    ]
+  },
+  {
+    "source": "analysis\\recovered_formal_runs_20261020\\50salads_fold2\\runtime_source\\sliding_unfold_patch.py",
+    "source_sha256": "6013905007733aa292e325b1f45e7af8505632471013c5aaf8e4f1b200408393",
+    "destination": "core\\sliding_unfold.py",
+    "destination_sha256": "741054cd9866f1a1f3a04da1d851e769d1d89ec6a9748a8031d065e6069496f3",
+    "extracted_names": [
+      "UNFOLD_IMPL"
+    ]
+  },
+  {
+    "source": "third_party\\tas_baselines\\ASFormer\\model.py",
+    "source_sha256": "66745b1059c8242f9974fc908da7802c92022b70ff995961c068fa382627706d",
+    "destination": "midas\\asformer.py",
+    "destination_sha256": "77e8ec81ac9e2142f560711e388c460d1022b6eb1fa192a082091e278cc129b4",
+    "extracted_names": [
+      "AttLayer",
+      "AttModule",
+      "AttentionHelper",
+      "ConvFeedForward",
+      "Decoder",
+      "Encoder",
+      "FCFeedForward",
+      "MultiHeadAttLayer",
+      "MyTransformer",
+      "exponential_descrease"
+    ]
+  },
+  {
+    "source": "analysis\\cholec80_ablation_20261015\\rts_fast.py",
+    "source_sha256": "184bd73bcc24775306217086bf2bff5f484c52457e8ead77a3a35503a4e2c638",
+    "destination": "core\\fast_smoothing.py",
+    "destination_sha256": "cf065a854887c782c6b4001beb63ac79b7fc20e84146a637a3f2c0a906740cba",
+    "extracted_names": [
+      "_p_recursion",
+      "_scan_coeffs",
+      "fast_rts_smooth"
+    ]
+  },
+  {
+    "source": "analysis\\internal_switch_baselines_20261011\\metric_reference_source.py",
+    "source_sha256": "31476a5b10a6fc7f9836b13d31a8bd8b1e4ff0e18b31286cc44a0861accd57f6",
+    "destination": "midas\\metrics.py",
+    "destination_sha256": "9ff92c9e7653f0ce0bcd72546903ca917dc41f3d77e92aaeb1018002dce64158",
+    "extracted_names": [
+      "edit",
+      "f1_counts",
+      "metrics",
+      "seg"
+    ]
+  }
+]
