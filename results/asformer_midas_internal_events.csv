@@ -1,0 +1,3 @@
+﻿dataset,model,events,affected_videos,internal_wrong_seconds,extra_prediction_segments
+AutoLaparo,ASFormer,8,4,644.0,16
+AutoLaparo,MIDAS,0,0,0,0

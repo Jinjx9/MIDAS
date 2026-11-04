@@ -1,0 +1,55 @@
+{
+  "dataset": "50Salads",
+  "setting": "custom fold2 subject split 32/8/10;18 classes;exploratory",
+  "model": {
+    "input_dim": 2048,
+    "num_classes": 18,
+    "num_layers": 10,
+    "num_f_maps": 64,
+    "num_decoders": 3,
+    "lam": 0.0003,
+    "mid": false,
+    "backend": "historical_fast",
+    "attention_impl": "unfold"
+  },
+  "checkpoint_sha256": "2d47ef8dfce9255187e2f6fb7649d14e5ea38f5d994233432a9c0f6a2a9ce8cb",
+  "runtime": {
+    "allow_tf32": false
+  },
+  "selected_epoch": 78,
+  "binding": "d9d39e590342d1acf5e5b89a355d23791125b60a513cd1eb153fbd1283c2e515",
+  "checkpoint_availability": "Recovered and verified locally; no hosted download yet",
+  "evaluation": {
+    "protocol": "official_asformer",
+    "background": 17,
+    "label_merge": "raw17,18 ->17"
+  },
+  "expected_metrics": {
+    "Acc": 83.06067008753396,
+    "Edit": 73.25118048371515,
+    "F1@10": 78.8659793814433,
+    "F1@25": 77.31958762886597,
+    "F1@50": 67.01030927835052
+  },
+  "training": {
+    "seed": 19980125,
+    "epochs": 120,
+    "patience": 0,
+    "lr": 0.0005,
+    "weight_decay": 1e-05,
+    "gradient_clipping": false,
+    "shuffle": "python",
+    "parent": null,
+    "selection": "validation F1@50; earlier tie"
+  },
+  "source_sha256": {
+    "runner_sha256": "85ac8bc6ee4bdf4b01f138e4ccfbea3a417dcbc934304389069c3b59b19209d6",
+    "evaluator_sha256": "2211afbe81c0360c40f5be6a186442cffdf959ba02571019a70c8f6ec7510bec",
+    "shared_factory_sha256": "8106329d310d0e3ed1b2c7b7afe97756a25f10a5c0d1d63233df5a5a8543dd21",
+    "model_source_sha256": "66745b1059c8242f9974fc908da7802c92022b70ff995961c068fa382627706d",
+    "rts_source_sha256": "184bd73bcc24775306217086bf2bff5f484c52457e8ead77a3a35503a4e2c638",
+    "wrapper_source_sha256": "26d41b00bb1ebd3cf8611f367fee67499c148ccbdde0bb7b235e7d0ce16bc6fe",
+    "sliding_unfold_patch_sha256": "6013905007733aa292e325b1f45e7af8505632471013c5aaf8e4f1b200408393"
+  },
+  "prior_exposure": "Some current test videos were training videos in prior runs; not an untouched independent confirmation"
+}

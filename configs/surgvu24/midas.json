@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "reconstructed_new_run_not_historical_score_reproduction",
+  "classes": ["Range of motion", "Rectal artery/vein", "Retraction and collision avoidance", "Skills application", "Suspensory ligaments", "Suturing", "Uterine horn"],
+  "model": {
+    "input_dim": 1024,
+    "num_classes": 8,
+    "num_layers": 10,
+    "num_f_maps": 64,
+    "num_decoders": 3,
+    "lam": 0.0001,
+    "mid": true,
+    "backend": "historical_fast",
+    "attention_impl": "unfold"
+  },
+  "training": {"seed": 19980125, "epochs": 30, "lr": 0.0001, "weight_decay": 0.00001, "grad_clip": 5.0},
+  "data": {"normalization": "video_zscore", "feature_layout": "time_channels", "fps": 1, "overlap_policy": "last_annotation_wins", "expected_split_counts": {"train": 100, "val": 25, "test": 30}},
+  "readout": {"threshold": 0.5, "min_length": 3, "top_k": 100},
+  "evaluation": {"thresholds": [0.3, 0.4, 0.5, 0.6, 0.7]}
+}

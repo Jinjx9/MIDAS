@@ -1,0 +1,20 @@
+{
+  "status": "completed_new_run",
+  "source_commit": "bb964de63f852430af0fe0292818ed230ace7f89",
+  "config": "configs/surgvu24/midas.json",
+  "checkpoint": "weights/surgvu24_midas_seed19980125_best_val.pt",
+  "checkpoint_sha256": "bd12425de79fe4137be3c90e21d7e73344a55f724f28dafd3fe3d4b586c8c484",
+  "selected_epoch": 30,
+  "selection": "highest validation average_mAP; earlier ties",
+  "validation_average_mAP": 52.046387635205306,
+  "split_counts": {"train": 100, "val": 25, "test": 30},
+  "environment": {"python": "3.11.8", "torch": "2.5.1+cu121", "numpy": "1.26.4", "gpu": "Tesla V100 PCIe 16GB"},
+  "test": {
+    "protocol": "dataset_class_global_interpolated_ap_v1",
+    "thresholds": [0.3, 0.4, 0.5, 0.6, 0.7],
+    "mAP": [60.66259101540698, 57.83398706330461, 54.727194038058755, 41.86647859466592, 34.35727651359645],
+    "average_mAP": 49.88950544500655,
+    "num_videos": 30
+  },
+  "scope": "New run; not an assertion of historical paper-score reproduction or baseline evaluator equivalence. Restricted annotations, features and predictions are not distributed."
+}

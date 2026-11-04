@@ -1,0 +1,6 @@
+{
+  "dataset": "AutoLaparo",
+  "checkpoint_sha256": "61ea0ffdd4f8d9a2a5bae524f224e0930879c705f8a596ef1c437fd169d3cf53",
+  "model": {"input_dim": 2048, "num_classes": 7, "num_layers": 10, "num_f_maps": 64, "num_decoders": 3, "lam": 0.0001, "mid": true, "backend": "sequential", "attention_impl": "native"},
+  "purpose": "Fixed retained selected-weight inference; not a complete recovered training recipe"
+}

@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "midas-temporal-segmentation"
+version = "0.2.0"
+description = "Inter-stage temporal state estimation for action segmentation"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "torch>=2.5,<3"]
+
+license = {file = "LICENSE"}
+
+[tool.setuptools.packages.find]
+include = ["midas*", "core*"]
+
+[tool.setuptools.data-files]
+"licenses" = ["LICENSES/ASFormer.txt"]

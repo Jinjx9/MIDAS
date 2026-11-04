@@ -1,0 +1,7 @@
+{
+  "dataset": "Cholec80",
+  "checkpoint_sha256": "bc0c663aca9b1b54735f41790d3da13164437548cca868f78659e0bb13de3b15",
+  "model": {"input_dim": 2048, "num_classes": 7, "num_layers": 10, "num_f_maps": 64, "num_decoders": 3, "lam": 0.01, "mid": true, "backend": "historical_fast", "attention_impl": "native"},
+  "training": {"seed": 44, "lr": 0.0001, "weight_decay": 0.00001, "epochs": 20, "patience": 15, "initialization": "historical ASFormer epoch70 parent, separately required"},
+  "evaluation": "half_open"
+}

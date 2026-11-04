@@ -1,0 +1,100 @@
+{
+  "protocol": "dataset_class_global_interpolated_ap_v1",
+  "thresholds": [
+    0.3,
+    0.4,
+    0.5,
+    0.6,
+    0.7
+  ],
+  "setting": "100/25/30 SurgVU split; dataset-level AP; unchanged method-specific readout",
+  "methods": {
+    "TriDet": {
+      "mAP": [
+        51.288380348059185,
+        45.71616623694141,
+        33.44879006526604,
+        22.326898751369633,
+        8.919524569393273
+      ],
+      "average_mAP": 32.33995199420591,
+      "num_videos": 30,
+      "checkpoint_sha256": null,
+      "prediction_sha256": "7de33a4c037a3593b29a930c86fed08f6a7ccf2edecd3437f38c5a726fa891ae"
+    },
+    "MIDAS": {
+      "mAP": [
+        60.66259101540698,
+        57.83398706330461,
+        54.727194038058755,
+        41.86647859466592,
+        34.35727651359645
+      ],
+      "average_mAP": 49.88950544500655,
+      "num_videos": 30,
+      "checkpoint_sha256": "bd12425de79fe4137be3c90e21d7e73344a55f724f28dafd3fe3d4b586c8c484",
+      "prediction_sha256": null
+    },
+    "ActionFormer": {
+      "mAP": [
+        15.853018083723091,
+        6.833742370502834,
+        3.0402593940223346,
+        1.4302481128915987,
+        0.17716453008055572
+      ],
+      "average_mAP": 5.466886498244083,
+      "num_videos": 30,
+      "checkpoint_sha256": "2a7726052b3c66f45f591c217d771f9d737e6a6e8f9c7e33d1bd693e5d65f3ab",
+      "prediction_sha256": "a347155876b2e1f4c36707596a6e25347c6600b62373c277f6e66ed6f5e1b1f7"
+    },
+    "TemporalMaxer": {
+      "mAP": [
+        43.51055054607299,
+        35.007522236938904,
+        21.907370375670528,
+        10.779137470027722,
+        3.5635533561283603
+      ],
+      "average_mAP": 22.9536267969677,
+      "num_videos": 30,
+      "checkpoint_sha256": "74eb730aca6b2722080f586c59c1bb5bfc3e2ac823e1faf82777f2d2c5bdcbd3",
+      "prediction_sha256": "7380c91be3da0f8719d962242314fb427f761b6c57b19698499e0e5703827484"
+    },
+    "OphBiWSSD": {
+      "mAP": [
+        50.22689592203448,
+        43.07625764476692,
+        32.02328177678084,
+        23.256223806553265,
+        8.398138288304084
+      ],
+      "average_mAP": 31.396159487687918,
+      "num_videos": 30,
+      "checkpoint_sha256": "fe7a7324cf38a14961b67e65e240148aa5e2d186c9c1d3465648a45a06223f78",
+      "prediction_sha256": "631836319f6b008a09034768ce3679526e8e5bea0fae4a343adc4b00124d69c8"
+    },
+    "ASFormer w/o MIDAS": {
+      "mAP": [
+        55.732435222700595,
+        51.72220414405773,
+        50.220475096340444,
+        43.305154399345845,
+        32.50110463815169
+      ],
+      "average_mAP": 46.69627470011926,
+      "num_videos": 30,
+      "checkpoint_sha256": "2582ccca208c50cbff7229a7f11e416ec507056e0e061587ae489d7e05d4cb11",
+      "prediction_sha256": "890c0e7d235d2412f05d3018418d0741df2842bd5edb21a35f400143e7822cf6"
+    }
+  },
+  "matched_control": {
+    "config": "configs/surgvu24/asformer.json",
+    "checkpoint": "weights/surgvu24_asformer_seed19980125_best_val.pt",
+    "selected_epoch": 18,
+    "training_epochs": 30,
+    "seed": 19980125,
+    "midas_average_mAP_gain": 3.1932307448872876
+  },
+  "note": "ActionFormer uses the final validation-selected epoch35 checkpoint, not the earlier raw detection export. No model was selected using test scores."
+}

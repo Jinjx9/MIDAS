@@ -1,0 +1,9 @@
+﻿gt_segment_index,gt_class,gt_start,gt_end,start,end,duration_samples,duration_seconds,wrong_classes,wrong_segment_count,extra_switches,video,event_id,status,recovered_seconds,remaining_wrong_seconds,enclosing_correct_points_lost,midas_gt_omitted,baseline_gt_correct,midas_gt_correct
+2,2,1600,2680,1772,1835,63,63.0,[1],1,2,video17,ASFormer:video17:0,complete,63,0,0,0,1017,1080
+3,1,620,1313,1136,1167,31,31.0,[2],1,2,video18,ASFormer:video18:0,complete,31,0,0,0,560,614
+1,1,120,1400,996,1124,128,128.0,[2],1,2,video20,ASFormer:video20:0,worsened,0,128,2,0,980,826
+8,5,3215,4615,3285,3331,46,46.0,[6],1,2,video20,ASFormer:video20:1,complete,46,0,0,0,1227,1283
+8,5,3215,4615,3521,3581,60,60.0,[6],1,2,video20,ASFormer:video20:2,complete,60,0,0,0,1227,1283
+0,0,0,860,5,119,114,114.0,[1],1,2,video21,ASFormer:video21:0,complete,114,0,0,0,74,181
+2,2,1060,1600,1235,1376,141,141.0,[1],1,2,video21,ASFormer:video21:1,complete,141,0,0,0,331,520
+3,1,1600,2081,1843,1904,61,61.0,[2],1,2,video21,ASFormer:video21:2,complete,61,0,0,0,323,389

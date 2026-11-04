@@ -1,0 +1,7 @@
+﻿model,test_videos,valid_seconds,gt_segments,events,affected_videos,affected_video_pct,affected_gt_segments,internal_wrong_seconds,internal_wrong_pct,events_per_hour,wrong_class_segments,extra_prediction_segments,prediction_segments,omitted_gt,top_video_event_fraction,duration_q25,duration_median,duration_q75,duration_p90,duration_max,events_per_video_q25,events_per_video_median,events_per_video_q75,events_per_video_p90,events_per_video_max
+C2F-TCN,7,28060,62,22,7,100.0,18,2311.0,8.235923022095509,2.8225231646471847,27,49,105,10,0.22727272727272727,49.25,96.0,135.5,198.60000000000008,290.0,2.0,4.0,4.0,4.4,5.0
+UVAST,7,28060,62,0,0,0.0,0,0,0.0,0.0,0,0,50,9,0,,,,,,0.0,0.0,0.0,0.0,0.0
+FACT,7,28060,62,0,0,0.0,0,0,0.0,0.0,0,0,54,10,0,,,,,,0.0,0.0,0.0,0.0,0.0
+BaFormer,7,28060,62,0,0,0.0,0,0,0.0,0.0,0,0,37,22,0,,,,,,0.0,0.0,0.0,0.0,0.0
+Boundary+CDF*,7,28060,62,26,6,85.71428571428571,16,1117.0,3.9807555238774057,3.3357091945830364,31,57,122,12,0.3076923076923077,10.25,23.5,69.5,85.5,228.0,2.5,4.0,4.5,6.200000000000001,8.0
+MIDAS,7,28060,62,0,0,0.0,0,0,0.0,0.0,0,0,56,8,0,,,,,,0.0,0.0,0.0,0.0,0.0

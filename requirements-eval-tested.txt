@@ -1,0 +1,5 @@
+# Tested evaluation environment: Python 3.10.18.
+# Install the CUDA 12.1 PyTorch wheel separately when GPU evaluation is required.
+# This pins the tested core libraries, not every historical training environment.
+numpy==1.26.4
+torch==2.5.1

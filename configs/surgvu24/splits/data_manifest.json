@@ -1,0 +1,18 @@
+{
+  "annotations_sha256": "2f6756b64e7338dee70aaa2c44d68c118faee7bc04eaa93789b0146b97a764f5",
+  "classes": [
+    "Range of motion",
+    "Rectal artery/vein",
+    "Retraction and collision avoidance",
+    "Skills application",
+    "Suspensory ligaments",
+    "Suturing",
+    "Uterine horn"
+  ],
+  "background_id": 7,
+  "split_counts": {
+    "train": 100,
+    "val": 25,
+    "test": 30
+  }
+}
